@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millionaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="fiffty-fiffty" onclick="useHints('fiffty-fiffty')">
+                
+            </div>
+            <div class="audience" onclick="useHints('audience')">
+                
+            </div>
+            <div class="call-friend" onclick="useHints('call-friend')">
+                
+            </div>
+        </div>
+        <div class="left">
+            <div class="voice-controll"></div>
+            <div class="timer"></div>
+        </div>
+        <div class="content">
+            <div class="friend-answer" >
+                <span>You called to Mr. <b id="friend-name">Vcho</b></span>
+                <img id="friend-image" alt="">
+                <div class="">I think, that right answer is <br><b id="variation">B conlusion</b></div>
+            </div>
+            <div id="audience-help">
+                <div><span class="chart-option">A: </span><span class="answer-percent"></span></div>
+                <div><span class="chart-option">B: </span><span class="answer-percent"></span></div>
+                <div><span class="chart-option">C: </span><span class="answer-percent"></span></div>
+                <div><span class="chart-option">D: </span><span class="answer-percent"></span></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="levels">
+                <ol reversed>
+                    <li>$ 1 000 000</li>
+                    <li>$ 500 000</li>
+                    <li>$ 250 000</li>
+                    <li>$ 125 000</li>
+                    <li>$ 64 000</li>
+                    <li>$ 32 000</li>
+                    <li>$ 16 000</li>
+                    <li>$ 8 000</li>
+                    <li>$ 4 000</li>
+                    <li>$ 2 000</li>
+                    <li>$ 1 000</li>
+                    <li>$ 500</li>
+                    <li>$ 300</li>
+                    <li>$ 200</li>
+                    <li class="active">$ 100</li>
+                </ol>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="question" id="question"> It's all about what ?</div>
+            <div class="answer-block">
+                
+                
+                <div class="answer" onclick="checkAnswer(event)">
+                    <span class="option">A:</span>
+                    <span class="answer-text">About money</span>
+                </div>
+                
+                
+                <div class="answer" onclick="checkAnswer(event)"><span class="option">B:</span><span class="answer-text">About Love</span></div>
+                <div class="answer" onclick="checkAnswer(event)"><span class="option">C:</span><span class="answer-text">Perfection</span></div>
+                <div class="answer" onclick="checkAnswer(event)"><span class="option">D:</span><span class="answer-text">About Meditation</span></div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
