@@ -263,25 +263,25 @@ function audience() {
         // current level = 15 (25 + 50 / 15)
         if (currentLevel <= 2) {
             if (currentQuestion.options[index] === currentQuestion.answer){
-                element.innerText = 75;
+                element.innerText = 75 + "%";
                 allPercents -= 75;
     
             } else {
                 const percent = Math.floor(Math.random() * 8 );
                 allPercents -= percent;
-                element.innerText = percent;
+                element.innerText = percent + "%";
             }
         }
         
         if (currentLevel <= 8 && currentLevel > 2) {
             if (currentQuestion.options[index] === currentQuestion.answer) {
                 const percent = Math.floor(75 / currentLevel + 35);
-                element.innerText = percent;
+                element.innerText = percent + "%";
                 allPercents -= percent;
                 
             } else {
                 const percent = Math.floor(Math.random() * 12);
-                element.innerText = percent;
+                element.innerText = percent + "%";
                 allPercents -= percent;
             }
         }
@@ -289,11 +289,11 @@ function audience() {
         if (currentLevel > 8) {
             const percent = Math.floor(Math.random() * (33 - 25) + 25);
             allPercents -= percent;
-            element.innerText = percent;
+            element.innerText = percent + "%";
         }
 
         if (index === 3) {
-            element.innerText = +element.innerText + allPercents;
+            element.innerText = (+element.innerText + allPercents)+ "%";
         }
         
         
