@@ -293,7 +293,8 @@ function audience() {
         }
 
         if (index === 3) {
-            element.innerText = (+element.innerText + allPercents)+ "%";
+            element.innerText = +element.innerText + allPercents;
+            element.innerText = element.innerText + "%";
         }
         
         
